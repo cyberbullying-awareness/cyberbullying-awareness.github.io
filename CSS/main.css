@@ -346,6 +346,10 @@ h3 {
     font-size: 120%;
     text-align: left;
   }
+  .navb:hover {
+    animation: none; 
+    top: 0px;
+  }
   .selected {
     transform: translateY(-600%);
     transition-duration: 0.5s;
