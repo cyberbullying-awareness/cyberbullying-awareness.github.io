@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<!---------------------------------------------------------------------------------------------
+    █▀▀ █▀█ █▀▄ █▀▀   █▄▄ █▄█   █░█ ▄▀█ █▄▀ █▀█ ▄▀█ ▀█▀ █░█ █▄░█ █▀▄ ▄▀█   █▀ █ █▄░█ █▀▀ █░█
+    █▄▄ █▄█ █▄▀ ██▄   █▄█ ░█░   ▀▄▀ █▀█ █░█ █▀▄ █▀█ ░█░ █▄█ █░▀█ █▄▀ █▀█   ▄█ █ █░▀█ █▄█ █▀█
+----------------------------------------------------------------------------------------------->
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="Cyberbullying • Index" />
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="Images/icon.png" />
+    <meta property="og:description" content="input description here"/>
+    <title>Cyberbullying • Index</title>
+    <link rel="icon" href="../Images/icon.png">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/index_bg.css">
+  </head>
+  <body>
+    <div id="trns" class="transition">
+    </div>
+    <div class="mnav" id="button">
+      <button class="mobilenav" onclick="mobilenavopen()"><img height="32" width="32" src="../Images/mbn.png"></button>
+    </div>
+    <div class="nav" id="nav">
+      <ul id="navlist">
+        <a class="navb" id="navb" onclick="transition('../home.html')"><b>HOME</b></a>
+        <a class="navb" id="navb" onclick="transition('../about-us.html')"><b>ABOUT US</b></a>
+        <a class="selected" id="navb" onclick="transition('../information/index.html')"><b>INFORMATION</b></a>
+        <a class="navb" id="navb" onclick="transition('../get-help.html')"><b>GET HELP</b></a>
+        <a class="navb" onclick="transition('../search.html')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
+        <!-- <a class="navb" id="dmm"><button class="dmm" id="dm" onclick="dme()"><img height="32" width="32" src="Images/darkmode.png"></button></a> -->
+      </ul>
+    </div>
+    <br />
+    <div class="mobilespace">
+      <br />
+      <br />
+    </div>
+    <h1 id="movedown">INFORMATION</h1>
+    <h2 id="movedowndelay">INDEX</h2>
+    <div class="center">
+      <input class="search" id="search" oninput="search()" placeholder="Search the index...">
+    </div>
+    <ul class="searchlist" id="searchlist">
+      <li class="text" id="searchoption" onclick="transition('general.html')"><a class="link">General Information<br /><p class="sublink"><i>Cyberbullying is bullying with the use of digital technologies. It can happen on many...</i></p></a></li>
+      <li class="text" id="searchoption" onclick="transition('effects.html')"><a class="link">Effects of Cyberbullying on Mental, Emotional and Physical Health<br /><p class="sublink"><i>Cyberbullying is a significant stressor. Victims of Cyberbulling may feel...</i></p></a></li>
+      <li class="text" id="searchoption" onclick="transition('the-impact.html')"><a class="link">The Impact of Cyberbullying<br /><p class="sublink"><i>The Impact of Cyberbullying is significant. It may seem as if In Real Life (I.R.L.) bullying is...</i></p></a></li>
+      <li class="text" id="searchoption" onclick="transition('unintentional.html')"><a class="link">Unintentional Cyberbullying<br /><p class="sublink"><i>The definition of bullying is “seek to harm, intimidate, or coerce (someone perceived as vulnerable).” This means the...</i></p></a></li>
+      <li class="text" id="searchoption" onclick="transition('reasons.html')"><a class="link">Reasons why people Cyberbully<br /><p class="sublink"><i>Cyberbullying attackers can have many reasons to why they bully but...</i></p></a></li>
+      <li class="text" id="searchoption" onclick="transition('waystoknow.html')"><a class="link">How you can tell if you or someone is a victim<br /><p class="sublink"><i>A person can sometimes tell if an individual is...</i></p></a></li>    
+      <li class="text" id="searchoption" onclick="transition('imthevictim.html')"><a class="link">What if I am the victim?<br /><p class="sublink"><i>If you are a victim of Cyberbullying, know firstly that it’s not your fault at all. It’s recommended you...</i></p></a></li>        
+    </ul>
+  </body>
+  <script>
+    function search() {
+      input = document.getElementById('search');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById('searchlist');
+      li = ul.getElementsByTagName('li');
+      for (n = 0; n < li.length; n++) {
+        a = li[n].getElementsByTagName('a')[0]
+        textvalue = a.textContent || a.innerHTML;
+        textvalue = textvalue.toUpperCase();
+        if (textvalue.includes(filter)) {
+          li[n].style.display = "";
+        } else {
+          li[n].style.display = "none";
+        }
+      }
+    }
+    window.onscroll = function() {
+      if (window.scrollY > 2) {
+        const r = document.querySelector(':root');
+        r.style.setProperty('--navglow', 'white');
+        r.style.setProperty('--nbc', 'linear-gradient(rgba(180, 0, 0, 1.000), rgb(100, 0, 0, 1.00)');
+      }
+      if (window.scrollY < 2) {
+        const r = document.querySelector(':root');
+        r.style.setProperty('--navglow', 'rgba(0, 0, 0, 0');
+        r.style.setProperty('--nbc', 'linear-gradient(rgba(250, 0, 0, 0.600), rgb(120, 0, 0, 0.000)');
+      }
+    }
+    function transition(to) {
+      const trns = document.getElementById('trns');
+      trns.style.animationDuration = "0s"
+      trns.style.animation = "transitionstart 1s";
+      setTimeout(() => {  window.location.replace(to) }, 900);
+    }
+    var navopen = false;
+    function mobilenavopen() {
+      const r = document.querySelector(':root');
+      r.style.setProperty('--nbc', 'linear-gradient(rgba(180, 0, 0, 1.000), rgb(120, 0, 0, 1.00)');
+      const button = document.getElementById("button")
+      button.innerHTML = '<button class="mobilenav" onclick="mobilenavclose()"><img height="32" width="32" src="../Images/mbn.png"></button>';
+      const ul = document.getElementById("navlist");
+      const li = ul.getElementsByTagName("a");
+      for (A = 0; A < 7; A++) {
+        li[A].style.visibility = "visible";
+        li[A].style.transform = "translateY(43px)";
+      }
+    }
+    function mobilenavclose() {
+      const r = document.querySelector(':root');
+      r.style.setProperty('--nbc', 'linear-gradient(rgba(250, 0, 0, 0.600), rgb(120, 0, 0, 0.000)');
+      const button = document.getElementById("button")
+      button.innerHTML = '<button class="mobilenav" onclick="mobilenavopen()"><img height="32" width="32" src="../Images/mbn.png"></button>';
+      const ul = document.getElementById("navlist");
+      const li = ul.getElementsByTagName("a");
+      for (A = 0; A < 7; A++) {
+        li[A].style.visibility = "visible";
+        li[A].style.transform = "translateY(-600%)";
+      }
+    }
+  </script>
+</html>

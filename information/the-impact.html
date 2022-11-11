@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<!---------------------------------------------------------------------------------------------
+    █▀▀ █▀█ █▀▄ █▀▀   █▄▄ █▄█   █░█ ▄▀█ █▄▀ █▀█ ▄▀█ ▀█▀ █░█ █▄░█ █▀▄ ▄▀█   █▀ █ █▄░█ █▀▀ █░█
+    █▄▄ █▄█ █▄▀ ██▄   █▄█ ░█░   ▀▄▀ █▀█ █░█ █▀▄ █▀█ ░█░ █▄█ █░▀█ █▄▀ █▀█   ▄█ █ █░▀█ █▄█ █▀█
+----------------------------------------------------------------------------------------------->
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="Cyberbullying • The Impact" />
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="Images/icon.png" />
+    <meta property="og:description" content="input description here"/>
+    <title>Cyberbullying • The Impact</title>
+    <link rel="icon" href="../Images/icon.png">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/info_bg.css">
+  </head>
+  <body>
+    <div id="trns" class="transition">
+    </div>
+    <div class="mnav" id="button">
+      <button class="mobilenav" onclick="mobilenavopen()"><img height="32" width="32" src="../Images/mbn.png"></button>
+    </div>
+    <div class="nav" id="nav">
+      <ul id="navlist">
+        <a class="navb" id="navb" onclick="transition('../home.html')"><b>HOME</b></a>
+        <a class="navb" id="navb" onclick="transition('../about-us.html')"><b>ABOUT US</b></a>
+        <a class="selected" id="navb" onclick="transition('../information/index.html')"><b>INFORMATION</b></a>
+        <a class="navb" id="navb" onclick="transition('../get-help.html')"><b>GET HELP</b></a>
+        <a class="navb" onclick="transition('../search.html')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
+        <!-- <a class="navb" id="dmm"><button class="dmm" id="dm" onclick="dme()"><img height="32" width="32" src="Images/darkmode.png"></button></a> -->
+      </ul>
+    </div>
+    <br />
+    <h1 id="movedown">THE IMPACT OF CYBERBULLYING</h1>
+    <div class="contents" id="moveup">
+      <ul id="toc">
+        <h3>Table of Contents</h3>
+        <a class="link2" href="#introduction"><b>INTRODUCTION</b></a><br /><br />
+        <a class="link2" href="#up"><b>WHAT GOES UP, STAYS UP</b></a><br /><br />
+        <a class="link2" href="#stopped"><b>CYBERBULLYING CANNOT BE EASILY STOPPED</b></a><br />
+      </ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="introduction">
+      <h3 id="moveup">Introduction</h3>
+      <p id="moveup" class="text">The Impact of Cyberbullying is significant. It may seem as if In Real Life (I.R.L.) bullying is worse than Cyberbullying, but Cyberbullying can be worse than In Real Life (I.R.L) bullying. Cyberbullying can occur at any time, with no warning, in many forms. Cyberbullying can also be anonymous, meaning the attacker is unknown and hidden. It can also be disguised in a regular message from a known friend who is jealous and send normal messages with hints of envy in it, affecting your <a class="link3" href="#" onclick="transition('effects.html')">psychological state</a>.</p>
+    </div>
+    <br />
+    <div id="up">
+      <h3 id="moveup">What goes up, stays up</h3>
+      <p id="moveup" class="text">Cyberbullying can impact the <a class="link3" href="#" onclick="transition('effects.html')">victim’s health</a>, however, there are also greater impacts. If the bullying took place on social media by the bully uploading embarrassing media of the victim, it could effect the victim’s online reputation, the victim’s character and family status, causing them to experience <a class="link3" href="#" onclick="transition('effects.html')">strong feelings</a>. Unlike real-life, what goes up does not come down on the internet. If a post is removed, people may have downloaded, shared or re-uploaded the original post causing it to become “immortalized” on the internet. This knowledge can greatly effect the victim, causing them to feel anger, resentment and want revenge on the attacker. It’s important to note that <a class="link3" href="#" onclick="transition('unintentional.html')">Cyberbullying can sometimes be unintentional</a>.</p>
+    </div>
+    <br />
+    <div id="stopped">
+      <h3 id="moveup">Cyberbullying cannot be easily stopped.</h3>
+      <p id="moveup" class="text">You may think that Cyberbullying can be easily stopped by blocking the attacker, but this is not the case. The attacker could create what is known as an Alternate Account (Alt Accfor short), which is when they use another account. They can use this Alternate Account to further harass the victim and pose as another person. Attackers can also use a V.P.N. (Virtual Private Network) to use a new IP Address to to further harass the victim and bypass blocks on some platforms.</p>
+    </div>
+  <ul><a class="link2" href="#" onclick="transition('index.html')">RETURN TO INDEX</a></ul>
+  </body>
+  <script>
+    window.onscroll = function() {
+      if (window.scrollY > 2) {
+        const r = document.querySelector(':root');
+        r.style.setProperty('--navglow', 'white');
+        r.style.setProperty('--nbc', 'linear-gradient(rgba(180, 0, 0, 1.000), rgb(100, 0, 0, 1.00)');
+      }
+      if (window.scrollY < 2) {
+        const r = document.querySelector(':root');
+        r.style.setProperty('--navglow', 'rgba(0, 0, 0, 0');
+        r.style.setProperty('--nbc', 'linear-gradient(rgba(250, 0, 0, 0.600), rgb(120, 0, 0, 0.000)');
+      }
+    }
+    function transition(to) {
+      const trns = document.getElementById('trns');
+      trns.style.animationDuration = "0s"
+      trns.style.animation = "transitionstart 1s";
+      setTimeout(() => {  window.location.replace(to) }, 900);
+    }
+    var navopen = false;
+    function mobilenavopen() {
+      const r = document.querySelector(':root');
+      r.style.setProperty('--nbc', 'linear-gradient(rgba(180, 0, 0, 1.000), rgb(120, 0, 0, 1.00)');
+      const button = document.getElementById("button")
+      button.innerHTML = '<button class="mobilenav" onclick="mobilenavclose()"><img height="32" width="32" src="../Images/mbn.png"></button>';
+      const ul = document.getElementById("navlist");
+      const li = ul.getElementsByTagName("a");
+      for (A = 0; A < 7; A++) {
+        li[A].style.visibility = "visible";
+        li[A].style.transform = "translateY(43px)";
+      }
+    }
+    function mobilenavclose() {
+      const r = document.querySelector(':root');
+      r.style.setProperty('--nbc', 'linear-gradient(rgba(250, 0, 0, 0.600), rgb(120, 0, 0, 0.000)');
+      const button = document.getElementById("button")
+      button.innerHTML = '<button class="mobilenav" onclick="mobilenavopen()"><img height="32" width="32" src="../Images/mbn.png"></button>';
+      const ul = document.getElementById("navlist");
+      const li = ul.getElementsByTagName("a");
+      for (A = 0; A < 7; A++) {
+        li[A].style.visibility = "visible";
+        li[A].style.transform = "translateY(-600%)";
+      }
+    }
+  </script>
+</html>

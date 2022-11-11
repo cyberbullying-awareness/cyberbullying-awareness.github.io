@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<!---------------------------------------------------------------------------------------------
+    █▀▀ █▀█ █▀▄ █▀▀   █▄▄ █▄█   █░█ ▄▀█ █▄▀ █▀█ ▄▀█ ▀█▀ █░█ █▄░█ █▀▄ ▄▀█   █▀ █ █▄░█ █▀▀ █░█
+    █▄▄ █▄█ █▄▀ ██▄   █▄█ ░█░   ▀▄▀ █▀█ █░█ █▀▄ █▀█ ░█░ █▄█ █░▀█ █▄▀ █▀█   ▄█ █ █░▀█ █▄█ █▀█
+----------------------------------------------------------------------------------------------->
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="Cyberbullying • How can I tell?" />
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="Images/icon.png" />
+    <meta property="og:description" content="input description here"/>
+    <title>Cyberbullying • How you can tell</title>
+    <link rel="icon" href="../Images/icon.png">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/info_bg.css">
+  </head>
+  <body>
+    <div id="trns" class="transition">
+    </div>
+    <div class="mnav" id="button">
+      <button class="mobilenav" onclick="mobilenavopen()"><img height="32" width="32" src="../Images/mbn.png"></button>
+    </div>
+    <div class="nav" id="nav">
+      <ul id="navlist">
+        <a class="navb" id="navb" onclick="transition('../home.html')"><b>HOME</b></a>
+        <a class="navb" id="navb" onclick="transition('../about-us.html')"><b>ABOUT US</b></a>
+        <a class="selected" id="navb" onclick="transition('../information/index.html')"><b>INFORMATION</b></a>
+        <a class="navb" id="navb" onclick="transition('../get-help.html')"><b>GET HELP</b></a>
+        <a class="navb" onclick="transition('../search.html')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
+        <!-- <a class="navb" id="dmm"><button class="dmm" id="dm" onclick="dme()"><img height="32" width="32" src="Images/darkmode.png"></button></a> -->
+      </ul>
+    </div>
+    <br />
+    <h1 id="movedown">HOW YOU CAN TELL IF YOU OR SOMEONE IS A VICTIM</h1>
+    <div class="contents" id="moveup">
+      <ul id="toc">
+        <h3>Table of Contents</h3>
+        <a class="link2" href="#introduction"><b>INTRODUCTION</b></a><br /><br />
+        <a class="link2" href="#hidden"><b>HIDDEN CYBERBULLYING</b></a><br />
+        <a class="link2" href="#howtotell"><b>HOW YOU CAN TELL IF YOU OR SOMEONE IS A VICTIM</b></a><br />
+      </ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="introduction">
+      <h3 id="moveup">Introduction</h3>
+      <p id="moveup" class="text">A person can sometimes tell if an individual is a victim of Cyberbullying by their changes in their general behaviour.</p>
+    </div>
+    <br />
+    <div id="hidden">
+      <h3 id="moveup">Hidden Cyberbullying</h3>
+      <p id="moveup" class="text">Cyberbullying is not always obvious even if you are the victim. Sometimes there are hidden hints of bullying in what looks like harmless messages between friends who envy you. As a victim, you may not even know you are targetted and you may just brush it aside because of your loyalty to the friendship, then it may be too late when you realize you are a victim of Cyberbullying. To deal with a situation such as this because it was/is a friendship, it will be difficult and hurtful to you but you have to be determined and strong. No one deserves to feel punished, inferior, or stigmatized by another. Cyberbullying is about the language one uses to defame and/or threaten another.</p>
+    </div>
+    <br />
+    <div id="howtotell">
+      <h3 id="moveup">How can I tell if someone is a victim?</h3>
+      <p id="moveup" class="text">Victims of Cyberbullying usually do not tell others about their experiences, making it hard to for them to get the neccessary assistance. You can tell if a person is a victim as victims usually experience the following:<br /><br />
+
+        1. Nervous or jumpy when on social media or texting.<br /><br />
+        2. Frustration or upset after gaming or going on social media. This doesn’t always mean that they are a victim, they could be angry after losing an online match. Recognizing the difference will between the two is vital.<br /><br />
+        3. Reluctant to share information about their online activities.<br /><br />
+        4. Random weight loss or gain, trouble eating and stomach problems with no explaination. Most victims of Cyberbullying keep the incident a secret from others.<br /><br />
+        5. Loss of interest in favorite hobbies. The victim may be trying to fit in and prevent others from making fun of them.<br /><br />
+        6. Depression or anti-social.<br /><br />
+        7. Mood swings, intolerance of others and lashing out at others. This, like Number 2, does not always mean they are a victim, they could have a issue elsewhere causing the emotions.<br /><br />
+        8. Talking about committing suicide or attempting suicide. This is a serious red flag that should be addressed immediately.<br /><br />
+        
+        Not all victims experience these signs, sometimes people are not victims and experience these. Differentiating Cyberbullying victims from everyday discomforts is essential.</p>
+    </div>
+    <br />
+  <ul><a class="link2" href="#" onclick="transition('index.html')">RETURN TO INDEX</a></ul>
+  </body>
+  <script>
+    window.onscroll = function() {
+      if (window.scrollY > 2) {
+        const r = document.querySelector(':root');
+        r.style.setProperty('--navglow', 'white');
+        r.style.setProperty('--nbc', 'linear-gradient(rgba(180, 0, 0, 1.000), rgb(100, 0, 0, 1.00)');
+      }
+      if (window.scrollY < 2) {
+        const r = document.querySelector(':root');
+        r.style.setProperty('--navglow', 'rgba(0, 0, 0, 0');
+        r.style.setProperty('--nbc', 'linear-gradient(rgba(250, 0, 0, 0.600), rgb(120, 0, 0, 0.000)');
+      }
+    }
+    function transition(to) {
+      const trns = document.getElementById('trns');
+      trns.style.animationDuration = "0s"
+      trns.style.animation = "transitionstart 1s";
+      setTimeout(() => {  window.location.replace(to) }, 900);
+    }
+    var navopen = false;
+    function mobilenavopen() {
+      const r = document.querySelector(':root');
+      r.style.setProperty('--nbc', 'linear-gradient(rgba(180, 0, 0, 1.000), rgb(120, 0, 0, 1.00)');
+      const button = document.getElementById("button")
+      button.innerHTML = '<button class="mobilenav" onclick="mobilenavclose()"><img height="32" width="32" src="../Images/mbn.png"></button>';
+      const ul = document.getElementById("navlist");
+      const li = ul.getElementsByTagName("a");
+      for (A = 0; A < 7; A++) {
+        li[A].style.visibility = "visible";
+        li[A].style.transform = "translateY(43px)";
+      }
+    }
+    function mobilenavclose() {
+      const r = document.querySelector(':root');
+      r.style.setProperty('--nbc', 'linear-gradient(rgba(250, 0, 0, 0.600), rgb(120, 0, 0, 0.000)');
+      const button = document.getElementById("button")
+      button.innerHTML = '<button class="mobilenav" onclick="mobilenavopen()"><img height="32" width="32" src="../Images/mbn.png"></button>';
+      const ul = document.getElementById("navlist");
+      const li = ul.getElementsByTagName("a");
+      for (A = 0; A < 7; A++) {
+        li[A].style.visibility = "visible";
+        li[A].style.transform = "translateY(-600%)";
+      }
+    }
+  </script>
+</html>

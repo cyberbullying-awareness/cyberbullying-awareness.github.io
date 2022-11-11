@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<!---------------------------------------------------------------------------------------------
+    █▀▀ █▀█ █▀▄ █▀▀   █▄▄ █▄█   █░█ ▄▀█ █▄▀ █▀█ ▄▀█ ▀█▀ █░█ █▄░█ █▀▄ ▄▀█   █▀ █ █▄░█ █▀▀ █░█
+    █▄▄ █▄█ █▄▀ ██▄   █▄█ ░█░   ▀▄▀ █▀█ █░█ █▀▄ █▀█ ░█░ █▄█ █░▀█ █▄▀ █▀█   ▄█ █ █░▀█ █▄█ █▀█
+----------------------------------------------------------------------------------------------->
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="Cyberbullying • Effects" />
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="Images/icon.png" />
+    <meta property="og:description" content="input description here"/>
+    <title>Cyberbullying • Effects</title>
+    <link rel="icon" href="../Images/icon.png">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/info_bg.css">
+  </head>
+  <body>
+    <div id="trns" class="transition">
+    </div>
+    <div class="mnav" id="button">
+      <button class="mobilenav" onclick="mobilenavopen()"><img height="32" width="32" src="../Images/mbn.png"></button>
+    </div>
+    <div class="nav" id="nav">
+      <ul id="navlist">
+        <a class="navb" id="navb" onclick="transition('../home.html')"><b>HOME</b></a>
+        <a class="navb" id="navb" onclick="transition('../about-us.html')"><b>ABOUT US</b></a>
+        <a class="selected" id="navb" onclick="transition('../information/index.html')"><b>INFORMATION</b></a>
+        <a class="navb" id="navb" onclick="transition('../get-help.html')"><b>GET HELP</b></a>
+        <a class="navb" onclick="transition('../search.html')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
+        <!-- <a class="navb" id="dmm"><button class="dmm" id="dm" onclick="dme()"><img height="32" width="32" src="Images/darkmode.png"></button></a> -->
+      </ul>
+    </div>
+    <br />
+    <h1 id="movedown">EFFECTS OF CYBERBULLYING</h1>
+    <h2 id="movedowndelay">The effects of Cyberbullying on mental health, emotional health and physical health</h2>
+
+    <div class="contents" id="moveup">
+      <ul id="toc">
+        <h3>Table of Contents</h3>
+        <a class="link2" href="#introduction"><b>INTRODUCTION</b></a>
+        <br /><br />
+        <a class="link2" href="#mental-and-emotional"><b>EFFECTS ON THE MENTAL AND EMOTIONAL HEALTH</b></a>
+        <br /><br />
+        <a class="link2" href="#physical"><b>EFFECTS ON THE PHYSICAL HEALTH</b></a>
+        <br />
+      </ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="introduction">
+      <h3 id="moveup">Introduction</h3>
+      <p id="moveup" class="text"> According to Health Day News, an article provided on TUESDAY, June 28, 2022 states that “Adolescents who experience cyberbullying are more likely to think about suicide, a new study shows.”
+<br /><br />Cyberbullying is a significant stressor. Victims of Cyberbullying may feel distressed and perhaps embarrassed, they may even blame theirselves for the cyberbullying, causing negative thoughts about themselves. Cyberbullying victims may feel excluded and alone. This experience at a young age is very painful as children are more easily influenced. Adults may feel pressured and may have less confidence in themselves. This lack of confidence in both adults and children can lead to abnormal behaviour with others and emotional changes.</p>
+    </div>
+    <br />
+    <br />
+    <div id="mental-and-emotional">
+      <h3 id="moveup">Effects on the mental health and emotional health</h3>
+      <p id="moveup" class="text">Cyberbullying can lead to the victim experiencing depression, anxiety, stress related disorders, low self esteem, low academic performance and may have suicidal thoughts and tendencies. Victims may also experience emotional changes such as anger, humiliation, etc. The victim may feel angry due to what is being done to them, they may lash out onto others. Cyberbullying can cause victims to misbehave socially and participate in wrongful activities, such as drugs, violence, skipping school among others. They may isolate themselves socially and become withdrawn.</p>
+    </div>
+    <br />
+    <div id="physical">
+      <h3 id="moveup">Effects on the physical health</h3>
+      <p id="moveup" class="text">Cyberbullying also affects the physical body, not just mental and emotional health. Victims can experience upset stomachs due to the stress of bullying, disordered eating due to the emotional state of the victim, sleep disturbances such as nightmares, insomnia, oversleeping. Sometimes these changes in the victim can become permanent, for example: Psychological Eating Disorder, the victim may over eat or may get anorexia.</p>
+    </div>
+    <br />
+    <div id="note">
+      <h3 id="moveup">NOTE</h3>
+      <p id="moveup" class="text">If you are a parent or guardian and observe your child experiencing any of the above symptoms or issues, it would be wise to have a open conversation with them about what they are experiencing and if necessary they may need counselling or visit the doctor.</p>
+    </div>
+  <ul><a class="link2" href="#" onclick="transition('index.html')">RETURN TO INDEX</a></ul>
+  </body>
+  <script>
+    window.onscroll = function() {
+      if (window.scrollY > 2) {
+        const r = document.querySelector(':root');
+        r.style.setProperty('--navglow', 'white');
+        r.style.setProperty('--nbc', 'linear-gradient(rgba(180, 0, 0, 1.000), rgb(100, 0, 0, 1.00)');
+      }
+      if (window.scrollY < 2) {
+        const r = document.querySelector(':root');
+        r.style.setProperty('--navglow', 'rgba(0, 0, 0, 0');
+        r.style.setProperty('--nbc', 'linear-gradient(rgba(250, 0, 0, 0.600), rgb(120, 0, 0, 0.000)');
+      }
+    }
+    function transition(to) {
+      const trns = document.getElementById('trns');
+      trns.style.animationDuration = "0s"
+      trns.style.animation = "transitionstart 1s";
+      setTimeout(() => {  window.location.replace(to) }, 900);
+    }
+    var navopen = false;
+    function mobilenavopen() {
+      const r = document.querySelector(':root');
+      r.style.setProperty('--nbc', 'linear-gradient(rgba(180, 0, 0, 1.000), rgb(120, 0, 0, 1.00)');
+      const button = document.getElementById("button")
+      button.innerHTML = '<button class="mobilenav" onclick="mobilenavclose()"><img height="32" width="32" src="../Images/mbn.png"></button>';
+      const ul = document.getElementById("navlist");
+      const li = ul.getElementsByTagName("a");
+      for (A = 0; A < 7; A++) {
+        li[A].style.visibility = "visible";
+        li[A].style.transform = "translateY(43px)";
+      }
+    }
+    function mobilenavclose() {
+      const r = document.querySelector(':root');
+      r.style.setProperty('--nbc', 'linear-gradient(rgba(250, 0, 0, 0.600), rgb(120, 0, 0, 0.000)');
+      const button = document.getElementById("button")
+      button.innerHTML = '<button class="mobilenav" onclick="mobilenavopen()"><img height="32" width="32" src="../Images/mbn.png"></button>';
+      const ul = document.getElementById("navlist");
+      const li = ul.getElementsByTagName("a");
+      for (A = 0; A < 7; A++) {
+        li[A].style.visibility = "visible";
+        li[A].style.transform = "translateY(-600%)";
+      }
+    }
+  </script>
+</html>
