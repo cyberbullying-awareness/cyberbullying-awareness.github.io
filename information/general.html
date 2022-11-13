@@ -23,11 +23,11 @@
     </div>
     <div class="nav" id="nav">
       <ul id="navlist">
-        <a class="navb" id="navb" onclick="transition('../home.html')"><b>HOME</b></a>
-        <a class="navb" id="navb" onclick="transition('../about-us.html')"><b>ABOUT US</b></a>
-        <a class="selected" id="navb" onclick="transition('../information/index.html')"><b>INFORMATION</b></a>
-        <a class="navb" id="navb" onclick="transition('../get-help.html')"><b>GET HELP</b></a>
-        <a class="navb" onclick="transition('../search.html')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
+        <a class="navb" id="navb" onclick="transition('../home')"><b>HOME</b></a>
+        <a class="navb" id="navb" onclick="transition('../about-us')"><b>ABOUT US</b></a>
+        <a class="selected" id="navb" onclick="transition('../information/index')"><b>INFORMATION</b></a>
+        <a class="navb" id="navb" onclick="transition('../get-help')"><b>GET HELP</b></a>
+        <a class="navb" onclick="transition('../search')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
         <!-- <a class="navb" id="dmm"><button class="dmm" id="dm" onclick="dme()"><img height="32" width="32" src="Images/darkmode.png"></button></a> -->
       </ul>
     </div>
@@ -50,7 +50,7 @@
     <br />
     <div id="introduction">
       <h3 id="moveup">Introduction</h3>
-      <p id="moveup" class="text">Cyberbullying is bullying with the use of digital technologies. It can happen on many different platforms, such as social media, messaging, gaming platforms, mobile phones among others. It’s aimed at harassing, scaring, angering or embarrassing those who are targeted. According to a <a class="link3" href="#" onclick="transition('https://l1ght.com/Toxicity_during_coronavirus_Report-L1ght.pdf?fbclid=IwAR12yPh-GIi1Ur1qwwZoCuu4nP2zG5dLxs590Exli5UXYORQCWp3w_ko1MQ')">L1ght Study analyzing millions of websites, popular teen chat sites, and gaming platforms</a>, during the Covid-19 pandemic in 2020, when everyone was online; there was a “70% increase in hate between kids and teens during online chats.” and “40% increase in toxicity on popular gaming platforms, such as Discord.”. Most victims of Cyberbullying do not report their experiences to an adult or an authority.</p>
+      <p id="moveup" class="text">Cyberbullying is bullying with the use of electronic devices and/or digital technologies. It can happen on many different platforms, such as social media, messaging, gaming platforms, mobile phones among others. It’s aimed at harassing, scaring, angering or embarrassing those who are targeted. According to a <a class="link3" href="#" onclick="transition('https://l1ght.com/Toxicity_during_coronavirus_Report-L1ght.pdf?fbclid=IwAR12yPh-GIi1Ur1qwwZoCuu4nP2zG5dLxs590Exli5UXYORQCWp3w_ko1MQ')">L1ght Study analyzing millions of websites, popular teen chat sites, and gaming platforms</a>, during the Covid-19 pandemic in 2020, when everyone was online; there was a “70% increase in hate between kids and teens during online chats.” and “40% increase in toxicity on popular gaming platforms, such as Discord.”. Most victims of Cyberbullying do not report their experiences to an adult or an authority.</p>
     </div>
     <br />
     <br />
@@ -61,10 +61,10 @@
         
         <b>2.</b> Sending hurtful, abusive or threatening messages, images or videos via messaging platforms.<br /><br />
         
-        <b>3.</b> Impersonating someone and sending hurtful messages to others on their behalf or through fake accounts.<br /><br />These are not limited to just messaging platforms. Cyberbullying can take place on video games, videos, websites, voice chat services, etc.<br />Cyberbullying affects the <a class="link3" href="#" onclick="transition('effects.html')">victim’s mental, emotional and physical health</a> significantly. They may develop anxiety, depression, suicidal thoughts, among others. </p>
+        <b>3.</b> Impersonating someone and sending hurtful messages to others on their behalf or through fake accounts.<br /><br />These are not limited to just messaging platforms. Cyberbullying can take place on video games, videos, websites, voice chat services, etc.<br />Cyberbullying affects the <a class="link3" href="#" onclick="transition('effects')">victim’s mental, emotional and physical health</a> significantly. They may develop anxiety, depression, suicidal thoughts, among others. </p>
       </div>
   <br />
-  <ul><a class="link2" href="#" onclick="transition('index.html')">RETURN TO INDEX</a></ul>
+  <ul><a class="link2" href="#" onclick="transition('index')">RETURN TO INDEX</a></ul>
   </body>
   <script>
     window.onscroll = function() {
@@ -94,7 +94,6 @@
       const ul = document.getElementById("navlist");
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
-        li[A].style.visibility = "visible";
         li[A].style.transform = "translateY(43px)";
       }
     }
@@ -106,7 +105,6 @@
       const ul = document.getElementById("navlist");
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
-        li[A].style.visibility = "visible";
         li[A].style.transform = "translateY(-600%)";
       }
     }

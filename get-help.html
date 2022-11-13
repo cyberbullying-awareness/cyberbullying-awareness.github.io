@@ -6,14 +6,14 @@
 ----------------------------------------------------------------------------------------------->
   <head>
     <meta charset="utf-8">
-    <meta property="og:title" content="Cyberbullying • Effects" />
+    <meta property="og:title" content="Cyberbullying • Get Help" />
     <meta name="viewport" content="width=device-width">
     <meta property="og:image" content="Images/icon.png" />
     <meta property="og:description" content="input description here"/>
-    <title>Cyberbullying • Effects</title>
+    <title>Cyberbullying • Get Help</title>
     <link rel="icon" href="Images/icon.png">
     <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="CSS/404.css">
+    <link rel="stylesheet" href="CSS/help_bg.css">
   </head>
   <body>
     <div id="trns" class="transition">
@@ -23,23 +23,26 @@
     </div>
     <div class="nav" id="nav">
       <ul id="navlist">
-        <a class="navb" id="navb" onclick="transition('home.html')"><b>HOME</b></a>
-        <a class="navb" id="navb" onclick="transition('about-us.html')"><b>ABOUT US</b></a>
-        <a class="selected" id="navb" onclick="transition('information/index.html')"><b>INFORMATION</b></a>
-        <a class="navb" id="navb" onclick="transition('get-help.html')"><b>GET HELP</b></a>
-        <a class="navb" onclick="transition('search.html')"><button class="dmm"><img height="32" width="32" src="Images/search.png"></button></a>
+        <a class="navb" id="navb" onclick="transition('home')"><b>HOME</b></a>
+        <a class="navb" id="navb" onclick="transition('about-us')"><b>ABOUT US</b></a>
+        <a class="navb" id="navb" onclick="transition('information/index')"><b>INFORMATION</b></a>
+        <a class="selected" id="navb" onclick="transition('get-help')"><b>GET HELP</b></a>
+        <a class="navb" onclick="transition('search')"><button class="dmm"><img height="32" width="32" src="Images/search.png"></button></a>
         <!-- <a class="navb" id="dmm"><button class="dmm" id="dm" onclick="dme()"><img height="32" width="32" src="Images/darkmode.png"></button></a> -->
       </ul>
     </div>
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <h1 class="a404" id="movedown">404 NOT FOUND</h1>
-    <h2 class="a404"  id="movedowndelay">The page you are looking for does not exist.</h2>
+    <div class="mobilespace">
+      <br />
+      <br />
+    </div>
+    <h1 id="movedown">WAYS TO GET HELP</h1>
+    <p id="moveup" class="text">If you feel like you are a victim of Cyberbullying and it is affecting you in a negative way, causing suicidal thoughts or similar, you can call a <a class="link3" href="#" onclick="transition('https://findahelpline.com/')">helpline</a> for the country you reside in. Also, reporting the incident to your nearest police station’s Cyberbullying/Cybercrime Unit help with the perpetrator. 
+      <br />To prevent further incidents with the attacker, ensure you have done the following:<br /><br />
+      1. Block the Cyberbully. Most social media platforms have ways of blocking users. This can come in the form as a “Block” button or “Ignore” button or similar.<br /><br />
+      2. Report the account of the Cyberbully. Most social media platforms have a report function, where users can report other users for breaking the rules of the platform.<br /><br />
+      3. Keep evidence as proof that the incident took place.<br /><br />
+      4. Get assistance from a friend or family member, adult or someone in authority.</p>
   </body>
   <script>
     window.onscroll = function() {
@@ -69,7 +72,6 @@
       const ul = document.getElementById("navlist");
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
-        li[A].style.visibility = "visible";
         li[A].style.transform = "translateY(43px)";
       }
     }
@@ -81,7 +83,6 @@
       const ul = document.getElementById("navlist");
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
-        li[A].style.visibility = "visible";
         li[A].style.transform = "translateY(-600%)";
       }
     }

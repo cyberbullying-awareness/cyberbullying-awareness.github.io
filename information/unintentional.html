@@ -23,11 +23,11 @@
     </div>
     <div class="nav" id="nav">
       <ul id="navlist">
-        <a class="navb" id="navb" onclick="transition('../home.html')"><b>HOME</b></a>
-        <a class="navb" id="navb" onclick="transition('../about-us.html')"><b>ABOUT US</b></a>
-        <a class="selected" id="navb" onclick="transition('../information/index.html')"><b>INFORMATION</b></a>
-        <a class="navb" id="navb" onclick="transition('../get-help.html')"><b>GET HELP</b></a>
-        <a class="navb" onclick="transition('../search.html')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
+        <a class="navb" id="navb" onclick="transition('../home')"><b>HOME</b></a>
+        <a class="navb" id="navb" onclick="transition('../about-us')"><b>ABOUT US</b></a>
+        <a class="selected" id="navb" onclick="transition('../information/index')"><b>INFORMATION</b></a>
+        <a class="navb" id="navb" onclick="transition('../get-help')"><b>GET HELP</b></a>
+        <a class="navb" onclick="transition('../search')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
         <!-- <a class="navb" id="dmm"><button class="dmm" id="dm" onclick="dme()"><img height="32" width="32" src="Images/darkmode.png"></button></a> -->
       </ul>
     </div>
@@ -54,7 +54,7 @@
       <p id="moveup" class="text">Not all bullying, including Cyberbullying could be intentional, though most are. The victim could be misinterpreting the message. A simple joke posted under the victim’s upload could be misinterpreted as a hate comment or similar. The unintentional bully could think it’s a harmless joke while the victim will be offended. The victim not properly expressing that the message is offensive to them could lead to affecting the victim’s health. It’s important to know how others feel about our messages before we send them and it is also important to be able to express when we feel offended. We should ask “How would they feel if they received this?” if a positive response is questionable then we should refrain from posting it.</p>
     </div>
     <br />
-  <ul><a class="link2" href="#" onclick="transition('index.html')">RETURN TO INDEX</a></ul>
+  <ul><a class="link2" href="#" onclick="transition('index')">RETURN TO INDEX</a></ul>
   </body>
   <script>
     window.onscroll = function() {
@@ -84,7 +84,6 @@
       const ul = document.getElementById("navlist");
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
-        li[A].style.visibility = "visible";
         li[A].style.transform = "translateY(43px)";
       }
     }
@@ -96,7 +95,6 @@
       const ul = document.getElementById("navlist");
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
-        li[A].style.visibility = "visible";
         li[A].style.transform = "translateY(-600%)";
       }
     }

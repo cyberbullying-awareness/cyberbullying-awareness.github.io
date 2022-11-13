@@ -23,11 +23,11 @@
     </div>
     <div class="nav" id="nav">
       <ul id="navlist">
-        <a class="navb" id="navb" onclick="transition('../home.html')"><b>HOME</b></a>
-        <a class="navb" id="navb" onclick="transition('../about-us.html')"><b>ABOUT US</b></a>
-        <a class="selected" id="navb" onclick="transition('../information/index.html')"><b>INFORMATION</b></a>
-        <a class="navb" id="navb" onclick="transition('../get-help.html')"><b>GET HELP</b></a>
-        <a class="navb" onclick="transition('../search.html')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
+        <a class="navb" id="navb" onclick="transition('../home')"><b>HOME</b></a>
+        <a class="navb" id="navb" onclick="transition('../about-us')"><b>ABOUT US</b></a>
+        <a class="selected" id="navb" onclick="transition('../information/index')"><b>INFORMATION</b></a>
+        <a class="navb" id="navb" onclick="transition('../get-help')"><b>GET HELP</b></a>
+        <a class="navb" onclick="transition('../search')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
         <!-- <a class="navb" id="dmm"><button class="dmm" id="dm" onclick="dme()"><img height="32" width="32" src="Images/darkmode.png"></button></a> -->
       </ul>
     </div>
@@ -51,10 +51,10 @@
     <br />
     <div id="reasons">
       <h3 id="moveup">REASONS OF CYBERBULLYING</h3>
-      <p id="moveup" class="text">Cyberbullies can bully others online because they have an issue at school, work, home or in a relationship, causing them to become frustrated. Then may then take out this frustration on others online because they may not know how to properly express their concerns and emotions. They may also do it for fun or entertainment and enjoy tormenting others or may see it as a way to stay popular or feel powerful or escape their current situation. Sometimes people Cyberbully because it helps them cope with their own low-self esteem or fit in with their peers, sometimes they do not want to do the bullying but are peer pressured or forced to. It can also be an error, <a class="link3" href="#" onclick="transition('unintentional.html')">the message could be misinterpreted</a> or sent to the wrong individual.</p>
+      <p id="moveup" class="text">Cyberbullies can bully others online because they have an issue at school, work, home or in a relationship, causing them to become frustrated. Then may then take out this frustration on others online because they may not know how to properly express their concerns and emotions. They may also do it for fun or entertainment and enjoy tormenting others or may see it as a way to stay popular or feel powerful or escape their current situation. Sometimes people Cyberbully because it helps them cope with their own low-self esteem or fit in with their peers, sometimes they do not want to do the bullying but are peer pressured or forced to. It can also be an error, <a class="link3" href="#" onclick="transition('unintentional')">the message could be misinterpreted</a> or sent to the wrong individual.</p>
     </div>
     <br />
-  <ul><a class="link2" href="#" onclick="transition('index.html')">RETURN TO INDEX</a></ul>
+  <ul><a class="link2" href="#" onclick="transition('index')">RETURN TO INDEX</a></ul>
   </body>
   <script>
     window.onscroll = function() {
@@ -84,7 +84,6 @@
       const ul = document.getElementById("navlist");
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
-        li[A].style.visibility = "visible";
         li[A].style.transform = "translateY(43px)";
       }
     }
@@ -96,7 +95,6 @@
       const ul = document.getElementById("navlist");
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
-        li[A].style.visibility = "visible";
         li[A].style.transform = "translateY(-600%)";
       }
     }

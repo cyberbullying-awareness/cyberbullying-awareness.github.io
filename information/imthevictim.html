@@ -23,11 +23,11 @@
     </div>
     <div class="nav" id="nav">
       <ul id="navlist">
-        <a class="navb" id="navb" onclick="transition('../home.html')"><b>HOME</b></a>
-        <a class="navb" id="navb" onclick="transition('../about-us.html')"><b>ABOUT US</b></a>
-        <a class="selected" id="navb" onclick="transition('../information/index.html')"><b>INFORMATION</b></a>
-        <a class="navb" id="navb" onclick="transition('../get-help.html')"><b>GET HELP</b></a>
-        <a class="navb" onclick="transition('../search.html')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
+        <a class="navb" id="navb" onclick="transition('../home')"><b>HOME</b></a>
+        <a class="navb" id="navb" onclick="transition('../about-us')"><b>ABOUT US</b></a>
+        <a class="selected" id="navb" onclick="transition('../information/index')"><b>INFORMATION</b></a>
+        <a class="navb" id="navb" onclick="transition('../get-help')"><b>GET HELP</b></a>
+        <a class="navb" onclick="transition('../search')"><button class="dmm"><img height="32" width="32" src="../Images/search.png"></button></a>
         <!-- <a class="navb" id="dmm"><button class="dmm" id="dm" onclick="dme()"><img height="32" width="32" src="Images/darkmode.png"></button></a> -->
       </ul>
     </div>
@@ -60,7 +60,7 @@
         5. If the attacks are continous and affect your daily life, it is recommended that you report the incident to the nearest police station or Cybercrime Unit in your country/state. Their role is to provide technical assistance, detection and investigation of the Cybercrime.<br /></p>
     </div>
     <br />
-  <ul><a class="link2" href="#" onclick="transition('index.html')">RETURN TO INDEX</a></ul>
+  <ul><a class="link2" href="#" onclick="transition('index')">RETURN TO INDEX</a></ul>
   </body>
   <script>
     window.onscroll = function() {
@@ -90,7 +90,6 @@
       const ul = document.getElementById("navlist");
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
-        li[A].style.visibility = "visible";
         li[A].style.transform = "translateY(43px)";
       }
     }
@@ -102,7 +101,6 @@
       const ul = document.getElementById("navlist");
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
-        li[A].style.visibility = "visible";
         li[A].style.transform = "translateY(-600%)";
       }
     }
