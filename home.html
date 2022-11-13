@@ -56,7 +56,8 @@
     }
     function transition(to) {
       const trns = document.getElementById('trns');
-      trns.style.animationDuration = "0s"
+      trns.style.animationDuration = "0s";
+      trns.style.transform = "translateY(0px)";
       trns.style.animation = "transitionstart 1s";
       setTimeout(() => {  window.location.replace(to) }, 900);
     }
