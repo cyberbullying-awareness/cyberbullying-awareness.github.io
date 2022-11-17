@@ -180,7 +180,7 @@ ul {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 14;
+  z-index: 5;
   padding: 0px;
   margin: 0px;
 }
