@@ -177,17 +177,19 @@ ul {
 
 .credit {
   text-align: right;
-  align-self: right;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   z-index: 14;
   padding: 0px;
   margin: 0px;
-  transform: translateY(-40px);
 }
 
 .credittext {
-  color: white;
+  color: rgb(0, 255, 136);
   font-family: var(--font2);
-  text-shadow: 0px 0px 3px white;
+  text-shadow: 0px 0px 5px black;
+  font-style: italic;
   padding: 1%;
   margin: 1%;
   font-size: 80%;
