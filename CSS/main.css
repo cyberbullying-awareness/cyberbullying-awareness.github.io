@@ -142,7 +142,6 @@ ul {
 .link3 {
   transition-duration: 0.2;
   color: rgb(0, 110, 255);
-  text-align: center;
   font-family: var(--font2);
   text-shadow: 0px 0px 3px rgb(0, 110, 255);
 }
@@ -150,7 +149,6 @@ ul {
 .link3:hover {
   transition-duration: 0.2;
   color: rgb(81, 156, 255);
-  text-align: center;
   font-family: var(--font2);
   text-shadow: 0px 0px 5px rgb(81, 156, 255);
 }
@@ -345,6 +343,12 @@ h3 {
 
 
 @media (max-width: 630px) {
+  .credit {
+    width: 35%;
+  }
+  .credittext {
+    font-size: 70%;
+  }
   .search {
     padding: 2px;
   }
@@ -384,10 +388,13 @@ h3 {
     font-size: 120%;
     text-align: left;
   }
+  #navlist {
+    height: 0%;
+  }
   .nav {
     box-shadow: rgba(0, 0, 0, 0) 0 0 0;
     font-size: 100%;
-    transform: translateY(-25px);
+    transform: translateY(-1000px);
     transform: translateX(-10px);
     background-color: rgba(255, 255, 255, 0);
     background: rgba(255, 255, 255, 0);
@@ -395,6 +402,7 @@ h3 {
     margin: 0px;
     position: fixed;
     width: 50%;
+    height: 0%;
     text-align: left;
   }
   .mobilenav {
@@ -407,6 +415,9 @@ h3 {
     box-shadow: var(--navglow) 0px 0px 20px;
   }
   .text {
+    font-size: 110%;
+  }
+  .link3 {
     font-size: 110%;
   }
   .link2 {

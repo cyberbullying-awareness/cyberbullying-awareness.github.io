@@ -6,11 +6,11 @@
 ----------------------------------------------------------------------------------------------->
   <head>
     <meta charset="utf-8">
-    <meta property="og:title" content="Cyberbullying • Home" />
+    <meta property="og:title" content="Cyberbullying... A deadly crime." />
     <meta name="viewport" content="width=device-width">
     <meta property="og:image" content="Images/icon.png" />
-    <meta property="og:description" content="input description here"/>
-    <title>Cyberbullying • Home</title>
+    <meta property="og:description" content="Cyberbullying information and awareness."/>
+    <title>Cyberbullying... A deadly crime.</title>
     <link rel="icon" href="Images/icon.png">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/home_bg.css">
@@ -69,6 +69,9 @@
       const button = document.getElementById("button")
       button.innerHTML = '<button class="mobilenav" onclick="mobilenavclose()"><img height="32" width="32" src="Images/mbn.png"></button>';
       const ul = document.getElementById("navlist");
+      const nav = document.getElementById("nav");
+      ul.style.height = "auto";
+      nav.style.height = "auto";
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
         li[A].style.transform = "translateY(43px)";
@@ -80,6 +83,9 @@
       const button = document.getElementById("button")
       button.innerHTML = '<button class="mobilenav" onclick="mobilenavopen()"><img height="32" width="32" src="Images/mbn.png"></button>';
       const ul = document.getElementById("navlist");
+      const nav = document.getElementById("nav");
+      ul.style.height = "0%";
+      nav.style.height = "0%";
       const li = ul.getElementsByTagName("a");
       for (A = 0; A < 7; A++) {
         li[A].style.transform = "translateY(-600%)";
